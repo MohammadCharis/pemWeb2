@@ -1,0 +1,145 @@
+/* RESET */
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f1f5f9);
+    color: #1e293b;
+}
+
+/* HEADER */
+#header{
+    background: linear-gradient(135deg, #3b82f6, #3b82f6);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+#header h1{
+    margin: 0;
+    font-size: 38px;
+}
+
+#header p{
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* NAVBAR */
+#menubar{
+    background: rgb(4, 45, 122);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0);
+}
+
+/* MENU */
+
+.teksmenu{
+    text-decoration: none;
+    color: #93bdf4;
+    margin: 0 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.teksmenu::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.teksmenu:hover::after{
+    width: 100%;
+}
+
+.teksmenu:hover{
+    color: #ffffff;
+}
+
+
+/* KONTEN */
+#konten{
+    max-width: 1170px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #f8fafc;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* PARAGRAF */
+p{
+    line-height: 1.7;
+}
+
+/* WRAPPER CARD */
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card{
+    width: 400px;
+    margin: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(1.03);
+}
+
+/* JUDUL CARD */
+.card h3{
+    margin-top: 0;
+    color: #3b82f6;
+    text-align: center;
+}
+
+/* LIST LINK PRAKTIKUM */
+.card a{
+    display: block;
+    text-decoration: none;
+    color: #1e293b;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    background: #f1f5f9;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.card a:hover{
+    background: #3b82f6;
+    color: white;
+    transform: translateX(5px);
+}
+
+/* DESKRIPSI */
+.card p{
+    margin-top: 12px;
+    font-size: 14px;
+    color: #475569;
+    text-align: center;
+}
+/* FOOTER */
+#footer{
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 30px;
+}
