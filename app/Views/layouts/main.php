@@ -16,6 +16,8 @@
         <a href="<?= site_url('/') ?>" class="teksmenu">Beranda</a>
         <a href="<?= site_url('profil') ?>" class="teksmenu">Profil</a>
         <a href="<?= site_url('portofolio') ?>" class="teksmenu">Portofolio</a>
+        <a href="<?= site_url('artikel') ?>" class="teksmenu">Artikel</a>
+        <a href="<?= site_url('about-me') ?>" class="teksmenu">About Me</a>
     </div>
 
     <div id="konten">

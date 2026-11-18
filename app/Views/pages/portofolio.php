@@ -5,6 +5,7 @@
 <?= $this->section('subjudul') ?>Belajar Web Development dari Dasar<?= $this->endSection() ?>
 
 <?= $this->section('konten') ?>
+    <section class="home-section">
     <h2>Portofolio</h2>
 
     <p>
@@ -15,7 +16,7 @@
     <div class="card-container">
 
         <!-- MODUL 1 -->
-        <div class="card">
+        <div class="card card-orange">
             <h3>Modul 1</h3>
 
             <a href="<?= site_url('modul1/prak1') ?>">Praktikum 1</a>
@@ -26,7 +27,7 @@
         </div>
 
         <!-- MODUL 2 -->
-        <div class="card">
+        <div class="card card-blue">
             <h3>Modul 2</h3>
 
             <a href="<?= site_url('modul2/prak1') ?>">Praktikum 1</a>
@@ -39,4 +40,5 @@
         </div>
 
     </div>
+    </section>
 <?= $this->endSection() ?>
