@@ -1,12 +1,10 @@
 <?php
+
 namespace App\Controllers;
 
-class Pages extends BaseController
+class Artikel extends BaseController
 {
-    public function beranda()    { return view('pages/beranda'); }
-    public function profil()     { return view('pages/profil'); }
-    public function portofolio() { return view('pages/portofolio'); }
-    public function artikel()
+    public function index()
     {
         return view('pages/artikel');
     }
@@ -38,7 +36,7 @@ class Pages extends BaseController
                 'author' => 'Moh. Charis Rozikin',
                 'date' => '9 Agustus 2026',
                 'introduction' => 'CodeIgniter 4 merupakan framework PHP yang membantu pengembang membuat aplikasi web dengan struktur yang lebih rapi. Framework ini cocok digunakan untuk membuat website sederhana maupun aplikasi yang memiliki banyak fitur. CodeIgniter 4 juga memiliki dokumentasi yang cukup jelas sehingga membantu pemula memahami konsep pengembangan aplikasi web.',
-                'content' => 'CodeIgniter 4 membantu pengembangan aplikasi PHP dengan pola MVC. Routing menentukan alamat halaman yang dapat diakses pengguna, controller mengatur proses dan pemanggilan halaman, sedangkan view menampilkan informasi kepada pengguna. Dalam proyek ini, routing digunakan untuk menghubungkan alamat seperti /profil, /portofolio, dan /artikel dengan method yang ada di controller Pages. View kemudian menggunakan layout utama agar tampilan setiap halaman tetap seragam. CodeIgniter juga memiliki struktur folder yang jelas sehingga file controller, view, konfigurasi, dan aset dapat dikelola dengan lebih mudah. Pemisahan tanggung jawab ini membuat kode lebih mudah dibaca, diperbaiki, dan dikembangkan. Controller Pages berfungsi mengatur halaman-halaman utama website, sedangkan view berisi tampilan yang dilihat oleh pengguna. Dengan menggunakan layout, bagian seperti header, navigasi, dan footer tidak perlu ditulis berulang kali pada setiap halaman. Selain itu, penggunaan route membuat alamat halaman lebih teratur dan mudah dipahami. Proses ini membantu saya mengenal konsep pemrograman berorientasi objek karena setiap controller dibuat sebagai sebuah class dengan method yang memiliki tugas tertentu.',
+                'content' => 'CodeIgniter 4 membantu pengembangan aplikasi PHP dengan pola MVC. Routing menentukan alamat halaman yang dapat diakses pengguna, controller mengatur proses dan pemanggilan halaman, sedangkan view menampilkan informasi kepada pengguna. Dalam proyek ini, routing digunakan untuk menghubungkan alamat seperti /profil, /portofolio, dan /artikel dengan method yang ada di controller Artikel. View kemudian menggunakan layout utama agar tampilan setiap halaman tetap seragam. CodeIgniter juga memiliki struktur folder yang jelas sehingga file controller, view, konfigurasi, dan aset dapat dikelola dengan lebih mudah. Pemisahan tanggung jawab ini membuat kode lebih mudah dibaca, diperbaiki, dan dikembangkan.',
                 'conclusion' => 'Dengan memahami konsep MVC dan routing, pembuatan aplikasi CodeIgniter 4 menjadi lebih mudah dipahami dan dikembangkan. Framework ini membantu saya menulis kode secara lebih teratur dibandingkan membuat semua proses dalam satu file PHP. Pengalaman ini juga menjadi dasar penting untuk mempelajari fitur lanjutan seperti model, database, validasi form, autentikasi, dan pembuatan API.',
             ],
         ];
@@ -49,6 +47,4 @@ class Pages extends BaseController
 
         return view('pages/detail-artikel', ['article' => $articles[$slug]]);
     }
-
-    public function aboutMe()    { return view('pages/about-me'); }
 }

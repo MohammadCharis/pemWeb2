@@ -18,18 +18,16 @@
 
     <section class="home-section">
         <h2>Proyek Pilihan</h2>
-        <div class="card-container">
-            <a href="<?= site_url('portofolio') ?>" class="card card-blue"><h3>Portofolio Web</h3><p>Website pribadi dengan routing, controller, view, dan layout CodeIgniter 4.</p></a>
-            <a href="<?= site_url('modul1/prak1') ?>" class="card card-orange"><h3>Modul 1 HTML</h3><p>Latihan membangun struktur halaman web menggunakan HTML dasar.</p></a>
-            <a href="<?= site_url('modul2/prak1') ?>" class="card card-green"><h3>Modul 2 CSS</h3><p>Latihan mengatur warna, layout, jarak, dan tampilan halaman dengan CSS.</p></a>
+        <div class="project-grid">
+            <a href="<?= site_url('portofolio') ?>" class="project-card"><img src="<?= base_url('images/thumbnails/portfolio-web.svg') ?>" alt="Ilustrasi Portofolio Web"><strong>Portofolio Web</strong><small>Website pribadi dengan routing, controller, view, dan layout CodeIgniter 4.</small><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
+            <a href="<?= site_url('modul1/prak1') ?>" class="project-card"><img src="<?= base_url('images/thumbnails/modul-html.svg') ?>" alt="Ilustrasi Modul 1 HTML"><strong>Modul 1 HTML</strong><small>Latihan membangun struktur halaman web menggunakan HTML dasar.</small><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
+            <a href="<?= site_url('modul2/prak1') ?>" class="project-card"><img src="<?= base_url('images/thumbnails/modul-css.svg') ?>" alt="Ilustrasi Modul 2 CSS"><strong>Modul 2 CSS</strong><small>Latihan mengatur warna, layout, jarak, dan tampilan halaman dengan CSS.</small><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></span></a>
         </div>
     </section>
 
     <section class="home-section">
         <h2>Artikel Terbaru</h2>
-        <div class="card-container">
-            <a href="<?= site_url('artikel') ?>" class="card card-purple"><h3>Catatan Belajar Web Development</h3><p>Baca pengalaman dan proses belajar saya selama mengembangkan website.</p></a>
-        </div>
+        <a href="<?= site_url('artikel') ?>" class="clean-list-item single-item"><span><strong>Catatan Belajar Web Development</strong><small>Baca pengalaman dan proses belajar saya selama mengembangkan website.</small></span><b class="list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></b></a>
     </section>
 
     <section class="contact-box">

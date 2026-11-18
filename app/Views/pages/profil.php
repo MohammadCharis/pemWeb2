@@ -14,10 +14,10 @@
         </div>
     </section>
     <section class="home-section">
-        <div class="card-container profile-cards">
-            <div class="card card-blue"><h3>Data Pribadi</h3><p><strong>Nama:</strong> Moh. Charis Rozikin<br><strong>NIM:</strong> 202457201034<br><strong>Lokasi:</strong> Indonesia<br><strong>Email:</strong> charis@example.com</p></div>
-            <div class="card card-purple"><h3>Pendidikan</h3><p><strong>Program Studi:</strong> Sistem Informasi<br><strong>Semester:</strong> 4<br><strong>Fokus:</strong> Web Development</p></div>
-            <div class="card card-green"><h3>Pengalaman</h3><p>Mengerjakan praktikum HTML, CSS, dan proyek aplikasi pribadi menggunakan framework CodeIgniter 4.</p></div>
+        <div class="profile-info-grid">
+            <div class="profile-info"><span>Data Pribadi</span><p><strong>Nama:</strong> Moh. Charis Rozikin<br><strong>NIM:</strong> 202457201034<br><strong>Lokasi:</strong> Indonesia<br><strong>Email:</strong> charis@example.com</p></div>
+            <div class="profile-info"><span>Pendidikan</span><p><strong>Program Studi:</strong> Sistem Informasi<br><strong>Semester:</strong> 4<br><strong>Fokus:</strong> Web Development</p></div>
+            <div class="profile-info"><span>Pengalaman</span><p>Mengerjakan praktikum HTML, CSS, dan proyek aplikasi pribadi menggunakan framework CodeIgniter 4.</p></div>
         </div>
     </section>
     <section class="profile-actions">

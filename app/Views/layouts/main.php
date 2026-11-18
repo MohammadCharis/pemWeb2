@@ -12,12 +12,13 @@
         <p><?= $this->renderSection('subjudul') ?></p>
     </div>
 
+    <?php $currentPath = trim(uri_string(), '/'); ?>
     <div id="menubar">
-        <a href="<?= site_url('/') ?>" class="teksmenu">Beranda</a>
-        <a href="<?= site_url('profil') ?>" class="teksmenu">Profil</a>
-        <a href="<?= site_url('portofolio') ?>" class="teksmenu">Portofolio</a>
-        <a href="<?= site_url('artikel') ?>" class="teksmenu">Artikel</a>
-        <a href="<?= site_url('about-me') ?>" class="teksmenu">About Me</a>
+        <a href="<?= site_url('/') ?>" class="teksmenu <?= $currentPath === '' ? 'active' : '' ?>">Beranda</a>
+        <a href="<?= site_url('profil') ?>" class="teksmenu <?= $currentPath === 'profil' ? 'active' : '' ?>">Profil</a>
+        <a href="<?= site_url('portofolio') ?>" class="teksmenu <?= $currentPath === 'portofolio' ? 'active' : '' ?>">Portofolio</a>
+        <a href="<?= site_url('artikel') ?>" class="teksmenu <?= str_starts_with($currentPath, 'artikel') ? 'active' : '' ?>">Artikel</a>
+        <a href="<?= site_url('about-me') ?>" class="teksmenu <?= $currentPath === 'about-me' ? 'active' : '' ?>">About Me</a>
     </div>
 
     <div id="konten">
