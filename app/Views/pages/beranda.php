@@ -7,7 +7,6 @@
 <?= $this->section('konten') ?>
     <section class="hero-section">
         <div class="hero-copy">
-            <p class="hero-label">Selamat datang di website saya</p>
             <h2>Membangun pengalaman digital melalui proses belajar.</h2>
             <p>Saya Moh. Charis Rozikin, mahasiswa Sistem Informasi semester 5 yang sedang mengembangkan kemampuan dalam HTML, CSS, PHP, dan CodeIgniter 4.</p>
             <div class="hero-actions">
